@@ -1,3 +1,4 @@
+import colors from '@/colors';
 import { HeaderTab } from '@/types';
 import { Box, Stack } from '@mui/material';
 import Link from 'next/link';
@@ -9,15 +10,10 @@ export type HeaderProps = {
 
 const Header: FC<HeaderProps> = ({ tabs }) => {
   return (
-    <Box padding="8px">
-      <Stack
-        display="flex"
-        flexDirection="row"
-        justifyContent="flex-end"
-        gap="16px"
-      >
+    <Box padding="24px 0">
+      <Stack direction={'row'} spacing={2} justifyContent="flex-end">
         {tabs.map((tab, idx) => (
-          <Link key={idx} href={tab.dest}>
+          <Link key={idx} href={tab.dest} color={colors.accent}>
             {tab.content}
           </Link>
         ))}
