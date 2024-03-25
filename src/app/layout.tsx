@@ -1,9 +1,9 @@
-import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 import buttons from '@/data/buttons.json';
 import headerTabs from '@/data/headertabs.json';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'ngallant.dev'

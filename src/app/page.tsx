@@ -1,4 +1,4 @@
-import Island from '@/components/Island/Island';
+import Island from '@/components/Island';
 import { FC } from 'react';
 
 const App: FC = () => {

@@ -4,7 +4,7 @@
     "content": "home"
   },
   {
-    "dest": "projects",
+    "dest": "/projects",
     "content": "projects"
   }
 ]
