@@ -6,15 +6,15 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'ngallant.dev'
+    title: 'ngallant.dev'
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en">
-      <Header tabs={headerTabs} />
-      <main>{children}</main>
-      <Footer iconButtons={buttons} />
-    </html>
-  );
+    return (
+        <html lang="en">
+            <Header tabs={headerTabs} />
+            <main>{children}</main>
+            <Footer iconButtons={buttons} />
+        </html>
+    );
 }

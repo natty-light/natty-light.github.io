@@ -2,8 +2,8 @@ import colors from '@/colors';
 import { Stack, styled } from '@mui/material';
 
 export const Container = styled(Stack)({
-  width: '100%',
   height: 'auto',
+  width: '80%',
   justifyItems: 'center',
   alignItems: 'center',
   border: `2px solid ${colors.accent}`,

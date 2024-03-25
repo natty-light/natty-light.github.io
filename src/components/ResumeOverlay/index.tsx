@@ -5,33 +5,33 @@ import { Button } from '@mui/material';
 type ResumeOverlayProps = {};
 
 const ResumeOverlay: FC<ResumeOverlayProps> = ({}) => {
-  const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(false);
 
-  const handleButtonClick = (e: MouseEvent) => {
-    e.preventDefault();
-    setVisible(() => !visible);
+    const handleButtonClick = (e: MouseEvent) => {
+        e.preventDefault();
+        setVisible(() => !visible);
+
+        if (visible) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     if (visible) {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+        return (
+            <Overlay>
+                <object data="/content/resume.pdf" type="application/pdf" />
+            </Overlay>
+        );
+    } else {
+        return (
+            <Container>
+                <Button onClick={handleButtonClick}>View Resume</Button>
+            </Container>
+        );
     }
-  };
-
-  if (visible) {
-    return (
-      <Overlay>
-        <object data="/content/resume.pdf" type="application/pdf" />
-      </Overlay>
-    );
-  } else {
-    return (
-      <Container>
-        <Button onClick={handleButtonClick}>View Resume</Button>
-      </Container>
-    );
-  }
 };
 
 export default ResumeOverlay;
