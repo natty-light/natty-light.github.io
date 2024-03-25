@@ -1,6 +1,6 @@
 'use client';
 
-import { Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { FC } from 'react';
 import { Container } from './styles';
 import IconButton, { IconButtonProps } from '../Buttons/IconButton';
@@ -15,9 +15,11 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
       <Typography variant="h3" width="100%" textAlign="left">
         My Links
       </Typography>
-      {buttons.map((button, idx) => (
-        <IconButton key={idx} {...button} />
-      ))}
+      <Stack direction="row" spacing={2}>
+        {buttons.map((button, index) => (
+          <IconButton key={index} {...button} />
+        ))}
+      </Stack>
     </Container>
   );
 };
