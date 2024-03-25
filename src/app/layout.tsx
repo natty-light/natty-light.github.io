@@ -12,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
-            <Header tabs={headerTabs} />
-            <main>{children}</main>
-            <Footer iconButtons={buttons} />
+            <main>
+                <Header tabs={headerTabs} />
+                {children}
+                <Footer iconButtons={buttons} />
+            </main>
         </html>
     );
 }
