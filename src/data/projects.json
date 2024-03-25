@@ -1,0 +1,37 @@
+[
+  {
+    "link": "https://github.com/natty-light/life",
+    "text":["Conway\"s Game of Life implemented in Golang using OpenGL"],
+    "title": "Life",
+    "buttonText": "Github Repository",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/quonkLang",
+    "text": ["A BrainF**k inspired Esolang to help geese and ducks to learn to code"],
+    "title": "QuonkLang",
+    "buttonText": "Github Repository",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/brickgl",
+    "text": ["A study in targeting OpenGL directly in Golang"],
+    "title": "BrickGL",
+    "buttonText": "Github Repository",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/pong",
+    "text": ["A pong clone implemented in C++ using OpenGL"],
+    "title": "Pong by Nat :)",
+    "buttonText": "Github Repository",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/natty-light.github.io",
+    "text": ["My portfolio website (this site!)"],
+    "title": "Personal Website",
+    "buttonText": "Github Repository",
+    "buttonIcon": "mdi:github"
+  }
+]
