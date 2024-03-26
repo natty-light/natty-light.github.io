@@ -24,7 +24,7 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
                     textAlign="left"
                     color={colors.accent}
                 >
-                    My Links
+                    my links
                 </Typography>
                 <Stack direction="row" spacing={2}>
                     {buttons.map((button, index) => (

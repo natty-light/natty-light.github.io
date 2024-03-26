@@ -1,37 +1,58 @@
 [
   {
+    "link": "https://github.com/natty-light/QS2",
+    "text": "An expanded-on implementation of my QuonkScript programming language in Go, following along to the books \"Writing an Interpreter in Go\" and \"Writing a Compiler in Go\", by Thorsten Ball",
+    "title": "QS2",
+    "buttonText": "repo",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/batch",
+    "text": "A simple library for processing network requests in batches, written in TypeScript",
+    "title": "Batch",
+    "buttonText": "repo",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/ngallant.dev",
+    "text": "My personal website (this site!) built using React and NextJS, and hosted on GH Pages",
+    "buttonIcon": "mdi:github",
+    "buttonText": "repo",
+    "title": "ngallant.dev"
+  },
+  {
     "link": "https://github.com/natty-light/life",
-    "text":["Conway\"s Game of Life implemented in Golang using OpenGL"],
+    "text": "Conway\"s Game of Life implemented in Go using OpenGL",
     "title": "Life",
-    "buttonText": "Github Repository",
+    "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
   {
     "link": "https://github.com/natty-light/quonkLang",
-    "text": ["A BrainF**k inspired Esolang to help geese and ducks to learn to code"],
+    "text": "A BrainF**k inspired Esolang to help geese and ducks to learn to code",
     "title": "QuonkLang",
-    "buttonText": "Github Repository",
+    "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
   {
     "link": "https://github.com/natty-light/brickgl",
-    "text": ["A study in targeting OpenGL directly in Golang"],
+    "text": "A study in targeting OpenGL directly in Go",
     "title": "BrickGL",
+    "buttonText": "repo",
+    "buttonIcon": "mdi:github"
+  },
+  {
+    "link": "https://github.com/natty-light/natty-light.github.io",
+    "text": "An earlier version of this website, written with SolidJS and AstroJS, hosted on GH pages",
+    "title": "ngallant.dev v1",
     "buttonText": "Github Repository",
     "buttonIcon": "mdi:github"
   },
   {
     "link": "https://github.com/natty-light/pong",
-    "text": ["A pong clone implemented in C++ using OpenGL"],
-    "title": "Pong by Nat :)",
-    "buttonText": "Github Repository",
-    "buttonIcon": "mdi:github"
-  },
-  {
-    "link": "https://github.com/natty-light/natty-light.github.io",
-    "text": ["My portfolio website (this site!)"],
-    "title": "Personal Website",
-    "buttonText": "Github Repository",
+    "text": "A pong clone implemented in C++ using OpenGL",
+    "title": "Pong",
+    "buttonText": "repo",
     "buttonIcon": "mdi:github"
   }
 ]
