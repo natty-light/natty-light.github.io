@@ -5,6 +5,7 @@ import IconButton, { IconButtonProps } from '../Buttons/IconButton';
 import colors from '@/colors';
 import { Container, OuterStack } from './styles';
 import useScreenSize from '@/hooks/useScreenSize';
+import ResumeOverlay from '../ResumeOverlay';
 
 type FooterProps = {
     iconButtons: IconButtonProps[];
@@ -27,6 +28,7 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
                             color={colors.accent}
                         />
                     ))}
+                    <ResumeOverlay />
                 </Stack>
             </OuterStack>
         </Container>

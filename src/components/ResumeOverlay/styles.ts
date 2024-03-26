@@ -1,13 +1,5 @@
-import { Box, styled } from '@mui/material';
-
-export const Container = styled(Box)({
-    width: '100%',
-    height: 'auto',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '48px 0px'
-});
+import colors from '@/colors';
+import { Box, Button, styled } from '@mui/material';
 
 export const Overlay = styled(Box)({
     width: 'fit-content',
@@ -18,4 +10,18 @@ export const Overlay = styled(Box)({
     backgroundColor: '#2828304d',
     backdropFilter: 'blur(5px)',
     zIndex: 15
+});
+
+export const StyledCloseButton = styled(Button)({
+    position: 'absolute',
+    top: '0',
+    right: '0',
+    textDecoration: 'none',
+    color: colors.black
+});
+
+export const ButtonContainer = styled(Box)({
+    '&:hover': {
+        cursor: 'pointer'
+    }
 });

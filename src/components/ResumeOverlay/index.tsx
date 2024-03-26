@@ -1,37 +1,30 @@
-import { FC, MouseEvent, useState } from 'react';
-import { Container, Overlay } from './styles';
-import { Button } from '@mui/material';
+import { FC, useState } from 'react';
+import { ButtonContainer, Overlay, StyledCloseButton } from './styles';
+import { Box, Typography } from '@mui/material';
+import colors from '@/colors';
 
 type ResumeOverlayProps = {};
 
 const ResumeOverlay: FC<ResumeOverlayProps> = ({}) => {
     const [visible, setVisible] = useState(false);
 
-    const handleButtonClick = (e: MouseEvent) => {
-        e.preventDefault();
-        setVisible(() => !visible);
-
-        if (visible) {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    };
-
-    if (visible) {
-        return (
-            <Overlay>
-                <object data="/content/resume.pdf" type="application/pdf" />
-            </Overlay>
-        );
-    } else {
-        return (
-            <Container>
-                <Button onClick={handleButtonClick}>View Resume</Button>
-            </Container>
-        );
-    }
+    return (
+        <>
+            <ButtonContainer onClick={() => setVisible(true)}>
+                <Typography color={colors.accent} variant="button">
+                    resume
+                </Typography>
+            </ButtonContainer>
+            {visible && (
+                <Overlay>
+                    <StyledCloseButton onClick={() => setVisible(false)}>
+                        x
+                    </StyledCloseButton>
+                    <object data="/data/resume.pdf" type="application/pdf" />
+                </Overlay>
+            )}
+        </>
+    );
 };
 
 export default ResumeOverlay;
