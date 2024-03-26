@@ -1,12 +1,18 @@
-'use client';
 import colors from '@/colors';
 import { Typography, Stack } from '@mui/material';
 import { FC } from 'react';
-import { Container } from './styles';
 
 const Island: FC = () => {
     return (
-        <Container>
+        <Stack
+            height="auto"
+            width="80%"
+            justifyItems="center"
+            alignItems="center"
+            border={`2px solid ${colors.accent}`}
+            borderRadius="10px"
+            padding="32px 8px"
+        >
             <Stack direction="row">
                 <Typography variant="h1">Hi, I&apos;m</Typography>
                 <Typography padding="0 8px" variant="h1" color={colors.accent}>
@@ -19,7 +25,7 @@ const Island: FC = () => {
                 For now, if you like, here are some of my projects, or
                 alternatively, some places you can find out more about me.
             </Typography>
-        </Container>
+        </Stack>
     );
 };
 

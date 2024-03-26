@@ -1,6 +1,3 @@
-'use client';
-
-import { PageInnerContainer } from '@/components/Containers/styles';
 import Island from '@/components/Island';
 import { Box } from '@mui/material';
 import { FC } from 'react';

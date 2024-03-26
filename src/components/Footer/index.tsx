@@ -1,8 +1,5 @@
-'use client';
-
-import { Stack, Typography } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
 import { FC } from 'react';
-import { Container } from './styles';
 import IconButton, { IconButtonProps } from '../Buttons/IconButton';
 import colors from '@/colors';
 
@@ -12,8 +9,15 @@ type FooterProps = {
 
 const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
     return (
-        <Container>
-            <Stack>
+        <Box
+            bgcolor={colors.background}
+            position="absolute"
+            bottom="0"
+            left="0"
+            padding="32px 0px"
+            width="100vw"
+        >
+            <Stack padding="24px 24px">
                 <Typography
                     variant="h3"
                     width="100%"
@@ -28,7 +32,7 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
                     ))}
                 </Stack>
             </Stack>
-        </Container>
+        </Box>
     );
 };
 
