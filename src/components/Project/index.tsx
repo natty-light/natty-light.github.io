@@ -22,7 +22,6 @@ const Project: FC<ProjectProps> = ({
     buttonText
 }) => {
     const { open, close, isOpen } = useDrawer();
-    console.log(isOpen);
 
     return (
         <Box
