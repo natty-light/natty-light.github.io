@@ -28,7 +28,11 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
                 </Typography>
                 <Stack direction="row" spacing={2}>
                     {buttons.map((button, index) => (
-                        <IconButton key={index} {...button} />
+                        <IconButton
+                            key={index}
+                            {...button}
+                            color={colors.accent}
+                        />
                     ))}
                 </Stack>
             </Stack>
