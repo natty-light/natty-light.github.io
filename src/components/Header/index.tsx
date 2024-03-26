@@ -18,7 +18,12 @@ const Header: FC<HeaderProps> = ({ tabs }) => {
                 padding="16px 18px 24px 18px"
             >
                 {tabs.map((tab, idx) => (
-                    <Link key={idx} href={tab.dest} color={colors.accent}>
+                    <Link
+                        key={idx}
+                        href={tab.dest}
+                        color={colors.accent}
+                        style={{ textDecoration: 'none' }}
+                    >
                         {tab.content}
                     </Link>
                 ))}

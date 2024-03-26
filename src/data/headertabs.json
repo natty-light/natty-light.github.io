@@ -6,5 +6,9 @@
   {
     "dest": "/projects",
     "content": "projects"
+  },
+  {
+    "dest": "/about",
+    "content": "about"
   }
 ]
