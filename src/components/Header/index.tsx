@@ -11,7 +11,12 @@ export type HeaderProps = {
 const Header: FC<HeaderProps> = ({ tabs }) => {
     return (
         <Box>
-            <Stack direction={'row'} spacing={2} justifyContent="flex-end">
+            <Stack
+                direction={'row'}
+                spacing={2}
+                justifyContent="flex-end"
+                padding="16px 18px 24px 18px"
+            >
                 {tabs.map((tab, idx) => (
                     <Link key={idx} href={tab.dest} color={colors.accent}>
                         {tab.content}
