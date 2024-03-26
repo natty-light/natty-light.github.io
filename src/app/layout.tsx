@@ -13,9 +13,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
             <body style={{ margin: '0', padding: '0' }}>
-                <Header tabs={headerTabs} />
-                {children}
-                <Footer iconButtons={buttons} />
+                <Stack height="100vh">
+                    <Header tabs={headerTabs} />
+                    <Box flex="1">{children}</Box>
+                    <Footer iconButtons={buttons} />
+                </Stack>
             </body>
         </html>
     );
