@@ -1,7 +1,7 @@
 'use client';
 
 import useDrawer from '@/hooks/useDrawer';
-import { Box, Button, Drawer, Grid, Stack, Typography } from '@mui/material';
+import { Box, Button, Drawer, Stack, Typography } from '@mui/material';
 import type { FC } from 'react';
 import IconButton from '../Buttons/IconButton';
 import colors from '@/colors';
@@ -33,18 +33,32 @@ const Project: FC<ProjectProps> = ({
             margin="8px 8px"
         >
             <Stack>
-                <Typography variant="h5">{title}</Typography>
-                <IconButton
-                    icon={buttonIcon}
-                    link={link}
-                    content={buttonText}
-                    color={colors.black}
-                />
-                <Button onClick={open}>more info</Button>
+                <Typography variant="h5" color={colors.accent}>
+                    {title}
+                </Typography>
+                <Button onClick={open}>about</Button>
             </Stack>
             <Drawer open={isOpen} onClose={close}>
-                <Typography variant="h3">{title}</Typography>
-                <Typography variant="body1">{text}</Typography>
+                <Stack
+                    bgcolor={colors.black}
+                    height="100%"
+                    padding="16px 16px"
+                    maxWidth="400px"
+                    gap="16px"
+                >
+                    <Typography variant="h3" color={colors.accent}>
+                        {title}
+                    </Typography>
+                    <Typography variant="body1" color={colors.accent}>
+                        {text}
+                    </Typography>
+                    <IconButton
+                        icon={buttonIcon}
+                        link={link}
+                        content={buttonText}
+                        color={colors.accent}
+                    />
+                </Stack>
             </Drawer>
         </Box>
     );
