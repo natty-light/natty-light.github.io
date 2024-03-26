@@ -8,7 +8,7 @@
   },
   {
     "link": "https://github.com/natty-light/batch",
-    "text": "A simple library for processing network requests in batches, written in TypeScript",
+    "text": "A simple package for processing network requests in batches, written in TypeScript",
     "title": "Batch",
     "buttonText": "repo",
     "buttonIcon": "mdi:github"
