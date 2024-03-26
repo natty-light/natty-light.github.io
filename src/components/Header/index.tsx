@@ -20,8 +20,7 @@ const Header: FC<HeaderProps> = ({ tabs }) => {
                 <Link
                     key={idx}
                     href={tab.dest}
-                    color={colors.accent}
-                    style={{ textDecoration: 'none' }}
+                    style={{ textDecoration: 'none', color: colors.accent }}
                 >
                     {tab.content}
                 </Link>

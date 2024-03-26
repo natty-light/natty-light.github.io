@@ -2,7 +2,6 @@ import colors from '@/colors';
 import { Box, Stack, styled } from '@mui/material';
 
 export const Container = styled(Box)(({ theme }) => ({
-    backgroundColor: colors.background,
     width: '100vw'
 }));
 

@@ -14,12 +14,19 @@ const Island: FC = () => {
             padding="32px 8px"
         >
             <Stack direction="row">
-                <Typography variant="h1">hi, i&apos;m</Typography>
+                <Typography variant="h1" color={colors.white}>
+                    hi, i&apos;m
+                </Typography>
                 <Typography padding="0 8px" variant="h1" color={colors.accent}>
                     Natasha
                 </Typography>
             </Stack>
-            <Typography padding="8px" variant="body1" textAlign="center">
+            <Typography
+                padding="8px"
+                variant="body1"
+                textAlign="center"
+                color={colors.white}
+            >
                 i&apos;m a full stack developer. you&apos;ve found my
                 work-in-progress site which I am building with React and NextJS.
                 for now, if you like, here are some of my projects, or
