@@ -20,7 +20,7 @@ const IconButton: FC<IconButtonProps> = ({
         <Link href={link} color={color} underline="none">
             <Stack direction="row" spacing={1} alignItems="center">
                 <Icon icon={icon} />
-                <Typography variant="h6"> {content}</Typography>
+                <Typography variant="button"> {content}</Typography>
             </Stack>
         </Link>
     );

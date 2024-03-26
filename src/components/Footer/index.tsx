@@ -1,32 +1,25 @@
-import { Box, Stack, Typography } from '@mui/material';
+'use client';
+import { Stack, Typography } from '@mui/material';
 import { FC } from 'react';
 import IconButton, { IconButtonProps } from '../Buttons/IconButton';
 import colors from '@/colors';
+import { Container, OuterStack } from './styles';
+import useScreenSize from '@/hooks/useScreenSize';
 
 type FooterProps = {
     iconButtons: IconButtonProps[];
 };
 
 const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
+    const { isMobile } = useScreenSize();
+
     return (
-        <Box
-            bgcolor={colors.background}
-            position="absolute"
-            bottom="0"
-            left="0"
-            padding="32px 0px"
-            width="100vw"
-        >
-            <Stack padding="24px 24px">
-                <Typography
-                    variant="h3"
-                    width="100%"
-                    textAlign="left"
-                    color={colors.accent}
-                >
+        <Container>
+            <OuterStack direction={isMobile ? 'row' : 'column'} spacing={4}>
+                <Typography variant="h3" textAlign="left" color={colors.accent}>
                     my links
                 </Typography>
-                <Stack direction="row" spacing={2}>
+                <Stack direction={isMobile ? 'column' : 'row'} spacing={2}>
                     {buttons.map((button, index) => (
                         <IconButton
                             key={index}
@@ -35,8 +28,8 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
                         />
                     ))}
                 </Stack>
-            </Stack>
-        </Box>
+            </OuterStack>
+        </Container>
     );
 };
 
