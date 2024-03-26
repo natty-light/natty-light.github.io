@@ -14,7 +14,7 @@
     "buttonIcon": "mdi:github"
   },
   {
-    "link": "https://github.com/natty-light/ngallant.dev",
+    "link": "https://github.com/natty-light/natty-light.github.io",
     "text": "My personal website (this site!) built using React and NextJS, and hosted on GH Pages",
     "buttonIcon": "mdi:github",
     "buttonText": "repo",
@@ -42,7 +42,7 @@
     "buttonIcon": "mdi:github"
   },
   {
-    "link": "https://github.com/natty-light/natty-light.github.io",
+    "link": "https://github.com/natty-light/old-website",
     "text": "An earlier version of this website, written with SolidJS and AstroJS, hosted on GH pages",
     "title": "ngallant.dev v1",
     "buttonText": "Github Repository",
