@@ -1,7 +1,7 @@
 'use client';
 
 import useDrawer from '@/hooks/useDrawer';
-import { Box, Button, Drawer, Stack, Typography } from '@mui/material';
+import { Box, Button, Drawer, Link, Stack, Typography } from '@mui/material';
 import type { FC } from 'react';
 import IconButton from '../Buttons/IconButton';
 import colors from '@/colors';
@@ -31,12 +31,20 @@ const Project: FC<ProjectProps> = ({
             width="fit-content"
             padding="8px 8px"
             margin="8px 8px"
+            boxShadow={`0 0 10px ${colors.accent}`}
         >
             <Stack>
                 <Typography variant="h5" color={colors.accent}>
                     {title}
                 </Typography>
-                <Button onClick={open}>about</Button>
+                <Link
+                    onClick={open}
+                    underline="hover"
+                    color={colors.accent}
+                    alignSelf="center"
+                >
+                    about
+                </Link>
             </Stack>
             <Drawer open={isOpen} onClose={close}>
                 <Stack
