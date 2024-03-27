@@ -1,12 +1,16 @@
+'use client';
+
 import colors from '@/colors';
 import Island from '@/components/Island';
+import useScreenSize from '@/hooks/useScreenSize';
 import { Typography } from '@mui/material';
 import { FC } from 'react';
 
 const About: FC = () => {
+    const { isMobile } = useScreenSize();
     return (
         <Island>
-            <Typography variant="h1" color={colors.accent}>
+            <Typography variant={isMobile ? 'h3' : 'h1'} color={colors.accent}>
                 about me
             </Typography>
             <Typography
