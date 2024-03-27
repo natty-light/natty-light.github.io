@@ -14,7 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
-            <body style={{ margin: '0', padding: '0', cursor: 'none' }}>
+            <body
+                style={{
+                    margin: '0',
+                    padding: '0',
+                    cursor: 'none',
+                    backgroundColor: colors.black
+                }}
+            >
                 <Stack height="100vh" bgcolor={colors.black}>
                     <Header tabs={headerTabs} />
                     <Box flex="1">{children}</Box>
