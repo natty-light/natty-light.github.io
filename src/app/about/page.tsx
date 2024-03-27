@@ -1,20 +1,11 @@
 import colors from '@/colors';
-import { Stack, Typography } from '@mui/material';
+import Island from '@/components/Island';
+import { Typography } from '@mui/material';
 import { FC } from 'react';
 
 const About: FC = () => {
     return (
-        <Stack
-            height="auto"
-            width="80%"
-            justifyItems="center"
-            alignItems="center"
-            border={`2px solid ${colors.accent}`}
-            borderRadius="10px"
-            padding="32px 8px"
-            boxShadow={`0 0 10px ${colors.accent}`}
-            margin="auto auto"
-        >
+        <Island>
             <Typography variant="h1" color={colors.accent}>
                 about me
             </Typography>
@@ -49,7 +40,7 @@ const About: FC = () => {
                 coffee, and french and italian cooking. i&apos;m a big fan of
                 stand-up comedy, (watching, not doing), and i love movies.
             </Typography>
-        </Stack>
+        </Island>
     );
 };
 

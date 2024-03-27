@@ -1,7 +1,7 @@
 'use client';
 import { HeaderTabItem } from '@/types';
 import { Stack } from '@mui/material';
-import { FC, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 import HeaderTab from './HeaderTab';
 
 export type HeaderProps = {

@@ -8,5 +8,7 @@ export const Container = styled(Stack)(({ theme }) => ({
     alignItems: 'center',
     border: `2px solid ${colors.accent}`,
     borderRadius: '10px',
-    padding: '32px 8px'
+    padding: '32px 16px',
+    boxShadow: `0 0 10px ${colors.accent}`,
+    margin: 'auto auto'
 }));
