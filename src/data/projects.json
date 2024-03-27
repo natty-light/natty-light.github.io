@@ -7,52 +7,52 @@
     "buttonIcon": "mdi:github"
   },
   {
+    "link": "https://github.com/natty-light/QuonkScript",
+    "text": "This is the original implementation of my programming language, QuonkScript. I found a youtube tutorial that went over writing a simple interpreted language in TypeScript, but since I wanted an excuse to get better at Go, I decided to follow along using Go. I made tweaks and adjustments on top of the guide, so it's got some extra features. This project is what really piqued my interest in programming language design and implementation, a field I am still very much interested in",
+    "title": "QuonkScript",
+    "buttonText": "repo",
+    "buttonIcon": "mdi:github"
+  },
+  {
     "link": "https://github.com/natty-light/batch",
-    "text": "A simple package for processing network requests in batches, written in TypeScript",
-    "title": "Batch",
+    "text": "a simple package for processing network requests in batches, written in TypeScript. this project came about because at work, I was running into the same problem over and over, where I needed to make batched requests to an API to both read and write data. while this code isn't the route I ended up going, I wanted to implement something simple and barebones that could handle the job. this was also the first foray into publishing an NPM package for me, so a learning opportunity there as well",
+    "title": "batch",
     "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
   {
     "link": "https://github.com/natty-light/natty-light.github.io",
-    "text": "My personal website (this site!) built using React and NextJS, and hosted on GH Pages",
+    "text": "My personal website (this site!) built using React and NextJS, and hosted on GH Pages. the tech stack used here was picked because that's what I use at work, and I figured I could use what I have learned starting off my career as a developer to build something better than what I had. it's still a work in progress and probably will be for some time, but I intend to keep iterating on it and learning more about building websites as I go",
     "buttonIcon": "mdi:github",
     "buttonText": "repo",
     "title": "ngallant.dev"
   },
   {
-    "link": "https://github.com/natty-light/life",
-    "text": "Conway\"s Game of Life implemented in Go using OpenGL",
-    "title": "Life",
-    "buttonText": "repo",
-    "buttonIcon": "mdi:github"
-  },
-  {
     "link": "https://github.com/natty-light/quonkLang",
-    "text": "A BrainF**k inspired Esolang to help geese and ducks to learn to code",
+    "text": "A BrainF**k inspired Esolang to help geese and ducks to learn to code. this was my first foray into programming language implementation, and it's about as simple as it gets. despite that, it was a fun project. there are two implementations, one in C++ and the other in Go. this was right about the time where I started to use Go for my own projects, and it's flexibility and ease of writing immediately made it into a favorite",
     "title": "QuonkLang",
     "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
   {
     "link": "https://github.com/natty-light/brickgl",
-    "text": "A study in targeting OpenGL directly in Go",
+    "text": "this was my second Go based OpenGL project. having learned something about writing two dimensional renderers from my Life project, I decided to make the jump to 3D. it was a great learning experience, I got even more comfortable using OpenGL in Go. it was also a great refresher in some linear algebra for me, a skill I lamentably don't get to exercise very much these days",
     "title": "BrickGL",
     "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
   {
-    "link": "https://github.com/natty-light/old-website",
-    "text": "An earlier version of this website, written with SolidJS and AstroJS, hosted on GH pages",
-    "title": "ngallant.dev v1",
-    "buttonText": "Github Repository",
+    "link": "https://github.com/natty-light/life",
+    "text": "Conway's Game of Life implemented in Go using OpenGL. this was one of my first projects using OpenGL. I had written a pong clone in C++ years before, and wanted to revist it. I have always found the rendering pipeline very interesting, but never understood how it works. this project builds a simple rendering engine for the game from scratch using Go's OpenGL bindings, and was a great learning experience for me",
+    "title": "Life",
+    "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
   {
-    "link": "https://github.com/natty-light/pong",
-    "text": "A pong clone implemented in C++ using OpenGL",
-    "title": "Pong",
-    "buttonText": "repo",
+    "link": "https://github.com/natty-light/old-website",
+    "text": "An earlier version of this website, written with SolidJS and AstroJS, hosted on GH pages. my first foray into self hosting a website. I liked the look and feel of Astro, and was especially a fan of the islands concept",
+    "title": "ngallant.dev v1",
+    "buttonText": "Github Repository",
     "buttonIcon": "mdi:github"
   }
 ]
