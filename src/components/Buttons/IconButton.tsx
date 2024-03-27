@@ -17,7 +17,7 @@ const IconButton: FC<IconButtonProps> = ({
     color = colors.accent
 }) => {
     return (
-        <Link href={link} color={color} underline="none">
+        <Link href={link} color={color} underline="none" width="fit-content">
             <Stack direction="row" spacing={1} alignItems="center">
                 <Icon icon={icon} />
                 <Typography variant="button"> {content}</Typography>
