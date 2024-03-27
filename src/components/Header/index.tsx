@@ -1,14 +1,15 @@
-import colors from '@/colors';
-import { HeaderTab } from '@/types';
-import { Box, Stack } from '@mui/material';
-import Link from 'next/link';
-import { FC } from 'react';
+'use client';
+import { HeaderTabItem } from '@/types';
+import { Stack } from '@mui/material';
+import { FC, useState } from 'react';
+import HeaderTab from './HeaderTab';
 
 export type HeaderProps = {
-    tabs: HeaderTab[];
+    tabs: HeaderTabItem[];
 };
 
 const Header: FC<HeaderProps> = ({ tabs }) => {
+    const [activeIdx, setActiveIdx] = useState(0);
     return (
         <Stack
             direction={'row'}
@@ -17,13 +18,13 @@ const Header: FC<HeaderProps> = ({ tabs }) => {
             padding="16px 18px 24px 18px"
         >
             {tabs.map((tab, idx) => (
-                <Link
-                    key={idx}
-                    href={tab.dest}
-                    style={{ textDecoration: 'none', color: colors.accent }}
-                >
-                    {tab.content}
-                </Link>
+                <HeaderTab
+                    key={`tab-${idx}`}
+                    tab={tab}
+                    activeIdx={activeIdx}
+                    idx={idx}
+                    setActiveIdx={setActiveIdx}
+                />
             ))}
         </Stack>
     );

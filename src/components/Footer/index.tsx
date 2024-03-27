@@ -15,12 +15,15 @@ const Footer: FC<FooterProps> = ({ iconButtons: buttons }) => {
     const { isMobile } = useScreenSize();
 
     return (
-        <Container>
+        <Container borderTop={`2px solid ${colors.accent}`}>
             <OuterStack direction={isMobile ? 'row' : 'column'} spacing={4}>
                 <Typography variant="h3" textAlign="left" color={colors.accent}>
                     my links
                 </Typography>
-                <Stack direction={isMobile ? 'column' : 'row'} spacing={2}>
+                <Stack
+                    direction={isMobile ? 'column' : 'row'}
+                    spacing={isMobile ? 2 : 8}
+                >
                     {buttons.map((button, index) => (
                         <IconButton
                             key={index}
