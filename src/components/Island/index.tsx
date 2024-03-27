@@ -13,6 +13,7 @@ const Island: FC = () => {
             borderRadius="10px"
             padding="32px 8px"
             boxShadow={`0 0 10px ${colors.accent}`}
+            margin="auto auto"
         >
             <Stack direction="row">
                 <Typography variant="h1" color={colors.white}>
