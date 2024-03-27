@@ -1,6 +1,7 @@
 'use client';
 
 import colors from '@/colors';
+import useScreenSize from '@/hooks/useScreenSize';
 import { FC, useState, useEffect } from 'react';
 
 const Cursor: FC = () => {
@@ -17,6 +18,9 @@ const Cursor: FC = () => {
             document.removeEventListener('mousemove', moveHandler);
         };
     }, []);
+
+    const { isMobile } = useScreenSize();
+    if (isMobile) return null;
 
     return (
         <div
