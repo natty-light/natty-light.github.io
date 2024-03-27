@@ -19,14 +19,14 @@ const App: FC = () => {
             <Island>
                 <HeaderTextContainer>
                     <Typography
-                        variant={isMobile ? 'h2' : 'h1'}
+                        variant={isMobile ? 'h3' : 'h1'}
                         color={colors.white}
                     >
                         hi, i&apos;m
                     </Typography>
                     <Typography
                         padding="0 8px"
-                        variant="h1"
+                        variant={isMobile ? 'h2' : 'h1'}
                         color={colors.accent}
                     >
                         Natasha
