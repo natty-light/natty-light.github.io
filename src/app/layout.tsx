@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     backgroundColor: colors.black
                 }}
             >
-                <Stack height="100vh" zIndex={100}>
+                <Stack height="100vh">
                     <Header tabs={headerTabs} />
                     <div style={{ flex: '1' }}>{children}</div>
                     <Footer iconButtons={buttons} />
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                         position: 'absolute',
                         top: 0,
                         left: 0,
-                        zIndex: 1
+                        zIndex: -1
                     }}
                 >
                     <Background />
