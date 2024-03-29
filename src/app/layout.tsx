@@ -23,13 +23,23 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     backgroundColor: colors.black
                 }}
             >
-                <Stack height="100vh" zIndex={1}>
+                <Stack height="100vh" zIndex={100}>
                     <Header tabs={headerTabs} />
-                    <Box flex="1">{children}</Box>
+                    <div style={{ flex: '1' }}>{children}</div>
                     <Footer iconButtons={buttons} />
+                    <Cursor />
                 </Stack>
-                <Background />
-                <Cursor />
+                <div
+                    style={{
+                        filter: `blur(10px)`,
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        zIndex: 1
+                    }}
+                >
+                    <Background />
+                </div>
             </body>
         </html>
     );
