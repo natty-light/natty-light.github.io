@@ -1,11 +1,12 @@
 'use client';
 
 import useDrawer from '@/hooks/useDrawer';
-import { Box, Drawer, Link, Stack, Typography } from '@mui/material';
+import { Drawer, Link, Stack, Typography } from '@mui/material';
 import type { FC } from 'react';
 import IconButton from '../Buttons/IconButton';
 import colors from '@/colors';
 import { Container } from './styles';
+import Cursor from '../Cursor';
 
 type ProjectProps = {
     link: string;
@@ -47,6 +48,19 @@ const Project: FC<ProjectProps> = ({
                     maxWidth="400px"
                     gap="16px"
                 >
+                    <div
+                        style={{
+                            color: colors.accent,
+                            position: 'absolute',
+                            top: 0,
+                            right: 0,
+                            padding: '8px',
+                            cursor: 'pointer'
+                        }}
+                        onClick={close}
+                    >
+                        x
+                    </div>
                     <Typography variant="h3" color={colors.accent}>
                         {title}
                     </Typography>
@@ -59,6 +73,7 @@ const Project: FC<ProjectProps> = ({
                         content={buttonText}
                         color={colors.accent}
                     />
+                    <Cursor />
                 </Stack>
             </Drawer>
         </Container>
