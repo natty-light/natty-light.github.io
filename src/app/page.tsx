@@ -12,7 +12,7 @@ const App: FC = () => {
     return (
         <Container>
             <Island>
-                <HeaderTextContainer>
+                <HeaderTextContainer direction={isMobile ? 'column' : 'row'}>
                     <Typography
                         variant={isMobile ? 'h3' : 'h1'}
                         color={colors.white}
