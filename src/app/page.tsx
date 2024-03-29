@@ -1,21 +1,16 @@
 'use client';
 
 import Island from '@/components/Island';
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { FC } from 'react';
-import { HeaderTextContainer } from './styles';
+import { Container, HeaderTextContainer } from './styles';
 import useScreenSize from '@/hooks/useScreenSize';
 import colors from '@/colors';
 
 const App: FC = () => {
     const { isMobile } = useScreenSize();
     return (
-        <Box
-            display="flex"
-            width="100%"
-            justifyContent="center"
-            alignItems="center"
-        >
+        <Container>
             <Island>
                 <HeaderTextContainer>
                     <Typography
@@ -45,7 +40,7 @@ const App: FC = () => {
                     me.
                 </Typography>
             </Island>
-        </Box>
+        </Container>
     );
 };
 
