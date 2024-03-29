@@ -1,10 +1,11 @@
 'use client';
 
 import useDrawer from '@/hooks/useDrawer';
-import { Box, Button, Drawer, Link, Stack, Typography } from '@mui/material';
+import { Box, Drawer, Link, Stack, Typography } from '@mui/material';
 import type { FC } from 'react';
 import IconButton from '../Buttons/IconButton';
 import colors from '@/colors';
+import { Container } from './styles';
 
 type ProjectProps = {
     link: string;
@@ -24,15 +25,7 @@ const Project: FC<ProjectProps> = ({
     const { open, close, isOpen } = useDrawer();
 
     return (
-        <Box
-            border="2px solid"
-            borderColor={colors.accent}
-            borderRadius="10px"
-            width="fit-content"
-            padding="8px 8px"
-            margin="8px 8px"
-            boxShadow={`0 0 10px ${colors.accent}`}
-        >
+        <Container>
             <Stack>
                 <Typography variant="h5" color={colors.accent}>
                     {title}
@@ -68,7 +61,7 @@ const Project: FC<ProjectProps> = ({
                     />
                 </Stack>
             </Drawer>
-        </Box>
+        </Container>
     );
 };
 
