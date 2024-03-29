@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import { Box, Stack } from '@mui/material';
 import colors from '@/colors';
 import Cursor from '@/components/Cursor';
+import Background from '@/components/Background';
 
 export const metadata = {
     title: 'ngallant.dev'
@@ -22,11 +23,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     backgroundColor: colors.black
                 }}
             >
-                <Stack height="100vh" bgcolor={colors.black}>
+                <Stack height="100vh" zIndex={1}>
                     <Header tabs={headerTabs} />
                     <Box flex="1">{children}</Box>
                     <Footer iconButtons={buttons} />
                 </Stack>
+                <Background />
                 <Cursor />
             </body>
         </html>
