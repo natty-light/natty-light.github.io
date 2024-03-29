@@ -3,14 +3,15 @@
 import Island from '@/components/Island';
 import { Typography } from '@mui/material';
 import { FC } from 'react';
-import { Container, HeaderTextContainer } from './styles';
+import { HeaderTextContainer } from './styles';
 import useScreenSize from '@/hooks/useScreenSize';
 import colors from '@/colors';
+import PageContainer from '@/components/Containers/PageContainer';
 
 const App: FC = () => {
     const { isMobile } = useScreenSize();
     return (
-        <Container>
+        <PageContainer>
             <Island>
                 <HeaderTextContainer direction={isMobile ? 'column' : 'row'}>
                     <Typography
@@ -40,7 +41,7 @@ const App: FC = () => {
                     me.
                 </Typography>
             </Island>
-        </Container>
+        </PageContainer>
     );
 };
 

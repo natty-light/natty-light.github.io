@@ -1,16 +1,16 @@
 'use client';
 
 import colors from '@/colors';
+import PageContainer from '@/components/Containers/PageContainer';
 import Island from '@/components/Island';
 import useScreenSize from '@/hooks/useScreenSize';
 import { Typography } from '@mui/material';
 import { FC } from 'react';
-import { Container } from '../styles';
 
 const About: FC = () => {
     const { isMobile } = useScreenSize();
     return (
-        <Container>
+        <PageContainer>
             <Island>
                 <Typography
                     variant={isMobile ? 'h3' : 'h1'}
@@ -52,7 +52,7 @@ const About: FC = () => {
                     movies.
                 </Typography>
             </Island>
-        </Container>
+        </PageContainer>
     );
 };
 
