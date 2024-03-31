@@ -1,13 +1,14 @@
 'use client';
 import { useFrame } from '@react-three/fiber';
-import { FC, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import Ball from './Ball';
 import { BallRef } from './types';
 
 const Scene: FC = () => {
     const balls = useRef<BallRef[]>([]);
-    for (let i = 0; i < 50; i++) {
+
+    for (let i = 0; i < 100; i++) {
         const pos = new THREE.Vector3(
             (Math.random() - 0.5) * 100,
             (Math.random() - 0.5) * 100,
@@ -20,10 +21,10 @@ const Scene: FC = () => {
             (Math.random() - 0.5) * 0.1
         );
 
-        balls.current.push({
+        balls.current[i] = {
             position: pos,
             velocity: vel
-        });
+        };
     }
 
     useFrame(() => {
