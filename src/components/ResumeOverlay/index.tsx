@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { ButtonContainer, Overlay, StyledCloseButton } from './styles';
 import { Box, Typography } from '@mui/material';
 import colors from '@/colors';
@@ -7,6 +7,7 @@ type ResumeOverlayProps = {};
 
 const ResumeOverlay: FC<ResumeOverlayProps> = ({}) => {
     const [visible, setVisible] = useState(false);
+    useEffect(() => console.log(visible), [visible]);
 
     return (
         <>
@@ -20,7 +21,14 @@ const ResumeOverlay: FC<ResumeOverlayProps> = ({}) => {
                     <StyledCloseButton onClick={() => setVisible(false)}>
                         x
                     </StyledCloseButton>
-                    <object data="/data/resume.pdf" type="application/pdf" />
+                    <object
+                        data="/resume.pdf"
+                        type="application/pdf"
+                        style={{
+                            width: '100%',
+                            height: '100%'
+                        }}
+                    />
                 </Overlay>
             )}
         </>
