@@ -34,11 +34,8 @@ const App: FC = () => {
                     textAlign="center"
                     color={colors.white}
                 >
-                    i&apos;m a full stack developer. you&apos;ve found my
-                    work-in-progress site which I am building with React and
-                    NextJS. for now, if you like, here are some of my projects,
-                    or alternatively, some places you can find out more about
-                    me.
+                    i&apos;m a full stack developer. this is my site, built with
+                    NextJS. you can find some of my projects here, or my links
                 </Typography>
             </Island>
         </PageContainer>
