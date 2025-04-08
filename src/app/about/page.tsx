@@ -48,8 +48,7 @@ const About: FC = () => {
                 >
                     outside of work, i enjoy cycling and fencing, a good cup of
                     coffee, and french and italian cooking. i&apos;m a big fan
-                    of stand-up comedy, (watching, not doing), and i love
-                    movies.
+                    of Magic: The Gathering and i love movies.
                 </Typography>
             </Island>
         </PageContainer>
