@@ -27,7 +27,7 @@ const About: FC = () => {
                 >
                     i&apos;m a full stack developer. i have a degree in physics
                     which i obtained from James Madison Univerity in
-                    Harrisonburg, Virginia. i currently live in Annandale,
+                    Harrisonburg, Virginia. i currently live in Richmond,
                     Virginia. i&apos;m employed as a full stack engineer at
                     Exclusive Resorts. my languages of choice at Go and
                     TypeScript. i&apos;m comfortable with a variety of
