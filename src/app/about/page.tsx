@@ -29,9 +29,9 @@ const About: FC = () => {
                     which i obtained from James Madison Univerity in
                     Harrisonburg, Virginia. i currently live in Richmond,
                     Virginia. i&apos;m employed as a full stack engineer at
-                    Exclusive Resorts. my languages of choice at Go and
+                    Capital One. my languages of choice at Go and
                     TypeScript. i&apos;m comfortable with a variety of
-                    technologies like React, GraphQL, Docker, and Salesforce.
+                    technologies like React, Angular, GraphQL, Docker, and AWS.
                     some cool projects i&apos;ve worked on include contributing
                     to full stack web apps, designing, implementing, and
                     project-managing a custom data pipeline functionality.
