@@ -1,22 +1,8 @@
 [
   {
-    "link": "https://github.com/natty-light/feral-dad",
-    "title": "feraldad.com",
-    "text": "A portfolio website for the artist @feraldad",
-    "buttonIcon": "mdi:github",
-    "buttonText": "repo"
-  },
-  {
-    "link": "https://github.com/natty-light/rva-ride-finder",
-    "title": "RVA Ride Finder",
-    "text": "A work in progress web app designed to help cyclists in the Richmond area find group rides. Built with React and NextJS, using Zustand, Tailwind, and React-Query",
-    "buttonIcon": "mdi:github",
-    "buttonText": "repo"
-  },
-  {
-    "link": "https://github.com/natty-light/QS2",
-    "text": "An expanded-on implementation of my QuonkScript programming language in Go, following along to the books \"Writing an Interpreter in Go\" and \"Writing a Compiler in Go\", by Thorsten Ball",
-    "title": "QS2",
+    "link": "https://github.com/natty-light/sydney",
+    "text": "This project started as an implementation following along the \"Writing an Interpreter in Go\" and \"Writing a Compiler in Go\" books by Thorsten Ball. I have since added a static type system with a multi-pass typechecker, structs and interfaces with v-table dynamic dispatch, function declarations, immutability for variables, and hoisting. The compiler has been adjusted to be multi-pass, with extensions to the VM to support new features",
+    "title": "Sydney",
     "buttonText": "repo",
     "buttonIcon": "mdi:github"
   },
